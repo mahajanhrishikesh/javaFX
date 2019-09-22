@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.viewInventoryController">
+   <children>
+      <TableView fx:id="warehouseTable" layoutX="51.0" layoutY="88.0" prefHeight="379.0" prefWidth="622.0">
+         <columns>
+            <TableColumn fx:id="col_sid" prefWidth="75.0" text="Stock ID" />
+            <TableColumn fx:id="col_mat" prefWidth="141.0" text="Material" />
+            <TableColumn fx:id="col_space" prefWidth="106.0" text="Space" />
+            <TableColumn fx:id="col_cost" minWidth="6.0" prefWidth="97.0" text="Cost" />
+            <TableColumn fx:id="col_sd" prefWidth="96.0" text="Start Date" />
+            <TableColumn fx:id="col_ed" prefWidth="106.0" text="End Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="255.0" layoutY="14.0" text="View Inventory">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="backBtn" onAction="#goBack" layoutX="324.0" layoutY="467.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>

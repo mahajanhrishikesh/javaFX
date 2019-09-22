@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.withdrawStockController">
+   <children>
+      <Label layoutX="253.0" layoutY="11.0" text="Withdraw Stock">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="withdrawTable" layoutX="41.0" layoutY="78.0" prefHeight="379.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="col_sid" prefWidth="75.0" text="Stock ID" />
+          <TableColumn fx:id="col_mat" prefWidth="75.0" text="Material" />
+            <TableColumn fx:id="col_name" prefWidth="141.0" text="Warehouse Name" />
+            <TableColumn fx:id="col_space" prefWidth="77.0" text="Space" />
+            <TableColumn fx:id="col_cost" prefWidth="67.0" text="Cost" />
+            <TableColumn fx:id="col_sd" prefWidth="92.0" text="Start Date" />
+            <TableColumn fx:id="col_ed" prefWidth="94.0" text="End Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="609.0" layoutY="461.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Label fx:id="debugLabel" layoutX="96.0" layoutY="14.0" />
+      <Button fx:id="withdrawBtn" layoutX="64.0" layoutY="461.0" mnemonicParsing="false" onAction="#withdraw" text="Withdraw Stock" />
+      <Label layoutX="41.0" layoutY="51.0" text="Select Stock to Withdraw:">
+         <font>
+            <Font name="Britannic Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
