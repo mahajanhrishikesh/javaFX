@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.warehouseownerviewController">
+   <children>
+      <Label layoutX="187.0" layoutY="14.0" text="Warehouse Owner View">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0dce8" height="200.0" layoutX="225.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="251.0" />
+      <Label layoutX="225.0" layoutY="120.0" text="Actions: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="viBtn" layoutX="254.0" layoutY="180.0" mnemonicParsing="false" onAction="#viewInventory" prefHeight="25.0" prefWidth="192.0" text="View Inventory" />
+      <Button fx:id="logoutBtn" layoutX="255.0" layoutY="297.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="192.0" text="Logout" />
+      <Label fx:id="welcomeLabel" layoutX="287.0" layoutY="60.0" />
+      <Button fx:id="cwiBtn" layoutX="255.0" layoutY="238.0" mnemonicParsing="false" onAction="#changeWDet" prefHeight="25.0" prefWidth="192.0" text="Change Warehouse Details" />
+   </children>
+</AnchorPane>

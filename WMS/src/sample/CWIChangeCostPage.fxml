@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CWIChangeCostController">
+   <children>
+      <Label layoutX="174.0" layoutY="14.0" text="Change Warehouse Info">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="capBtn" layoutX="463.0" layoutY="148.0" mnemonicParsing="false" onAction="#changeCapacity" text="Change" />
+      <Button fx:id="remCapBtn" layoutX="463.0" layoutY="238.0" mnemonicParsing="false" onAction="#changeRemCap" text="Change" />
+      <Button fx:id="costBtn" layoutX="463.0" layoutY="323.0" mnemonicParsing="false" onAction="#changeCost" text="Change" />
+      <TextField fx:id="capFld" layoutX="132.0" layoutY="148.0" />
+      <TextField fx:id="remCapFld" layoutX="132.0" layoutY="238.0" />
+      <TextField fx:id="costFld" layoutX="132.0" layoutY="323.0" />
+      <Label layoutX="132.0" layoutY="120.0" text="Capacity: " />
+      <Label layoutX="132.0" layoutY="213.0" text="Remaining Capacity: " />
+      <Label layoutX="132.0" layoutY="300.0" text="Change Cost: " />
+      <Button fx:id="backBtn" layoutX="308.0" layoutY="405.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

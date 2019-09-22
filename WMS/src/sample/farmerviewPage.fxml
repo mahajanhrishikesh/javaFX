@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.farmerviewController">
+   <children>
+      <Button fx:id="addStockBtn" layoutX="253.0" layoutY="348.0" mnemonicParsing="false" onAction="#addStock" text="Add Stock" />
+      <Button fx:id="withdrawStockBtn" layoutX="433.0" layoutY="348.0" mnemonicParsing="false" onAction="#withdrawStock" text="View / Withdraw Stock" />
+      <Label fx:id="welcomeLabel" layoutX="37.0" layoutY="80.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="14.0" text="Warehouse Management Portal">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="352.0" text="Actions:" />
+      <Label layoutX="37.0" layoutY="168.0" text="Current City: " />
+      <Label fx:id="cityLabel" layoutX="106.0" layoutY="168.0" />
+      <Button fx:id="logoutBtn" layoutX="324.0" layoutY="452.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+   </children>
+</AnchorPane>
